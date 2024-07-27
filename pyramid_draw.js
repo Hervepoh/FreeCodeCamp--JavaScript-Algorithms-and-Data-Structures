@@ -20,7 +20,7 @@ function addSpace(length) {
     return result;
 }
 
-function drawPyramid(character="#", length=7) {
+function drawPyramid(character="#", length=7, inverted=false) {
    
     const rows = [];
     for (let i=0; i< length; i++) {
@@ -28,7 +28,12 @@ function drawPyramid(character="#", length=7) {
         for (let j = 0; j < i; j++) {
             result = character + result + character
         }
-        rows.push(addSpace(length+1-i) + result);
+        if (inverted) {
+            rows.unshift(addSpace(length+1-i) + result);
+        }else{
+            rows.push(addSpace(length+1-i) + result);
+        }
+       
     }
 
     for (const row of rows) {
@@ -37,3 +42,4 @@ function drawPyramid(character="#", length=7) {
    
 }
 drawPyramid("*",12);
+drawPyramid("*",10, true);
