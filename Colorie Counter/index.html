@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Counter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Calorie Counter</h1>
+        <form action="">
+            <div>
+                <label for="budget">Budget</label>
+                <input type="number" min="0">
+            </div>
+            <fieldset id="breakfast">
+                <legend>Breakfast</legend>
+            </fieldset>
+            <fieldset id="lunch">
+                <legend>Lunch</legend>
+            </fieldset>
+            <fieldset id="dinner">
+                <legend>Dinner</legend>
+            </fieldset>
+            <fieldset id="snacks">
+                <legend>Snacks</legend>
+            </fieldset>
+            <fieldset id="exercise">
+                <legend>Exercise</legend>
+            </fieldset>
+            <div>
+                <label for="add">Add food or exercise</label>
+                <select name="" id="">
+                    <option value="breakfast">Budget</option>
+                    <option value="lunch">dinner</option>
+                    <option value="dinner">Dinner</option>
+                    <option value="snacks">Snacks</option>
+                    <option value="exercise">Exercise</option>
+                </select>
+                <button type="submit">
+                    Add Entry
+                </button>
+            </div>
+            <div>
+                <input type="submit" value="Calculate Remaining Calories">
+                <input type="reset" value="Clear">
+            </div>
+        </form>
+        
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
